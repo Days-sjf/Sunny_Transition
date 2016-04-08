@@ -22,14 +22,13 @@
     self.view.backgroundColor = [UIColor redColor];
     self.view.userInteractionEnabled = YES;
     
-//    [self.navigationItem setHidesBackButton:YES];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 100, 100);
     button.center = self.view.center;
     button.backgroundColor = [UIColor yellowColor];
     [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:button];
+    [self.view addSubview:button];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -39,7 +38,7 @@
 
 - (void)back:(UIButton *)sender
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {

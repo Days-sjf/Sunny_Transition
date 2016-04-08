@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AEF11901CB7629800C8D72F /* TestModelTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF118F1CB7629800C8D72F /* TestModelTransition.m */; };
 		6AFF3E9D1CB641E5006EE286 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF3E9C1CB641E5006EE286 /* main.m */; };
 		6AFF3EA01CB641E5006EE286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF3E9F1CB641E5006EE286 /* AppDelegate.m */; };
 		6AFF3EA31CB641E5006EE286 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF3EA21CB641E5006EE286 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6AEF118E1CB7629800C8D72F /* TestModelTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModelTransition.h; sourceTree = "<group>"; };
+		6AEF118F1CB7629800C8D72F /* TestModelTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModelTransition.m; sourceTree = "<group>"; };
 		6AFF3E981CB641E5006EE286 /* SunnyTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFF3E9C1CB641E5006EE286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6AFF3E9E1CB641E5006EE286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				6AFF3EB31CB64A4B006EE286 /* SunnyBaseTransition.m */,
 				6AFF3EB51CB65B4B006EE286 /* TestTransition.h */,
 				6AFF3EB61CB65B4B006EE286 /* TestTransition.m */,
+				6AEF118E1CB7629800C8D72F /* TestModelTransition.h */,
+				6AEF118F1CB7629800C8D72F /* TestModelTransition.m */,
 				6AFF3EB81CB65B98006EE286 /* TestViewController.h */,
 				6AFF3EB91CB65B98006EE286 /* TestViewController.m */,
 				6AFF3E9E1CB641E5006EE286 /* AppDelegate.h */,
@@ -165,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AFF3EBA1CB65B98006EE286 /* TestViewController.m in Sources */,
+				6AEF11901CB7629800C8D72F /* TestModelTransition.m in Sources */,
 				6AFF3EA31CB641E5006EE286 /* ViewController.m in Sources */,
 				6AFF3EA01CB641E5006EE286 /* AppDelegate.m in Sources */,
 				6AFF3EB71CB65B4B006EE286 /* TestTransition.m in Sources */,
@@ -318,6 +324,7 @@
 				6AFF3EB11CB641E5006EE286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

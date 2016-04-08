@@ -20,7 +20,7 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
     
     ViewController *vc = [[ViewController alloc] init];
     

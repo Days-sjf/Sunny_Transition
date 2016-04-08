@@ -9,12 +9,14 @@
 #import "ViewController.h"
 #import "TestViewController.h"
 #import "TestTransition.h"
+#import "TestModelTransition.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong, nonatomic)UITableView *tableView;
 @property (strong, nonatomic)NSArray *array;
 @property (strong, nonatomic)TestTransition *transition;
+@property (strong, nonatomic)TestModelTransition *modelTransition;
 
 @end
 
@@ -32,6 +34,7 @@
     self.array = @[@"push/pop",@"present/dismiss"];
     
     self.transition = [[TestTransition alloc] init];
+    self.modelTransition = [[TestModelTransition alloc] init];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -56,12 +59,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    TestViewController *vc = [[TestViewController alloc] init];
+
     if (indexPath.row == 0) {
-        TestViewController *vc = [[TestViewController alloc] init];
         self.navigationController.delegate = self.transition;
         [self.navigationController pushViewController:vc animated:YES];
     }else{
-        
+        vc.transitioningDelegate = self.modelTransition;
+        [self presentViewController:vc animated:YES completion:nil];
     }
 }
 
