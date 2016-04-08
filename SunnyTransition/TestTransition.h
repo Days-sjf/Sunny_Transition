@@ -8,6 +8,6 @@
 
 #import "SunnyBaseTransition.h"
 
-@interface TestTransition : SunnyBaseTransition
+@interface TestTransition : SunnyBaseTransition<UIViewControllerAnimatedTransitioning>
 
 @end

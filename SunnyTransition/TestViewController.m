@@ -7,8 +7,11 @@
 //
 
 #import "TestViewController.h"
+#import "TestTransition.h"
 
 @interface TestViewController ()
+
+@property (strong, nonatomic)TestTransition *transition;
 
 @end
 
@@ -16,7 +19,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
+    self.view.userInteractionEnabled = YES;
+    
+//    [self.navigationItem setHidesBackButton:YES];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 0, 100, 100);
+    button.center = self.view.center;
+    button.backgroundColor = [UIColor yellowColor];
+    [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:button];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)back:(UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +47,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -13,6 +13,9 @@
 		6AFF3EA61CB641E5006EE286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF3EA41CB641E5006EE286 /* Main.storyboard */; };
 		6AFF3EA81CB641E5006EE286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF3EA71CB641E5006EE286 /* Assets.xcassets */; };
 		6AFF3EAB1CB641E5006EE286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF3EA91CB641E5006EE286 /* LaunchScreen.storyboard */; };
+		6AFF3EB41CB64A4B006EE286 /* SunnyBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF3EB31CB64A4B006EE286 /* SunnyBaseTransition.m */; };
+		6AFF3EB71CB65B4B006EE286 /* TestTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF3EB61CB65B4B006EE286 /* TestTransition.m */; };
+		6AFF3EBA1CB65B98006EE286 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF3EB91CB65B98006EE286 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		6AFF3EA71CB641E5006EE286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AFF3EAA1CB641E5006EE286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AFF3EAC1CB641E5006EE286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFF3EB21CB64A4B006EE286 /* SunnyBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunnyBaseTransition.h; sourceTree = "<group>"; };
+		6AFF3EB31CB64A4B006EE286 /* SunnyBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunnyBaseTransition.m; sourceTree = "<group>"; };
+		6AFF3EB51CB65B4B006EE286 /* TestTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTransition.h; sourceTree = "<group>"; };
+		6AFF3EB61CB65B4B006EE286 /* TestTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTransition.m; sourceTree = "<group>"; };
+		6AFF3EB81CB65B98006EE286 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		6AFF3EB91CB65B98006EE286 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 		6AFF3E9A1CB641E5006EE286 /* SunnyTransition */ = {
 			isa = PBXGroup;
 			children = (
+				6AFF3EB21CB64A4B006EE286 /* SunnyBaseTransition.h */,
+				6AFF3EB31CB64A4B006EE286 /* SunnyBaseTransition.m */,
+				6AFF3EB51CB65B4B006EE286 /* TestTransition.h */,
+				6AFF3EB61CB65B4B006EE286 /* TestTransition.m */,
+				6AFF3EB81CB65B98006EE286 /* TestViewController.h */,
+				6AFF3EB91CB65B98006EE286 /* TestViewController.m */,
 				6AFF3E9E1CB641E5006EE286 /* AppDelegate.h */,
 				6AFF3E9F1CB641E5006EE286 /* AppDelegate.m */,
 				6AFF3EA11CB641E5006EE286 /* ViewController.h */,
@@ -149,9 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AFF3EBA1CB65B98006EE286 /* TestViewController.m in Sources */,
 				6AFF3EA31CB641E5006EE286 /* ViewController.m in Sources */,
 				6AFF3EA01CB641E5006EE286 /* AppDelegate.m in Sources */,
+				6AFF3EB71CB65B4B006EE286 /* TestTransition.m in Sources */,
 				6AFF3E9D1CB641E5006EE286 /* main.m in Sources */,
+				6AFF3EB41CB64A4B006EE286 /* SunnyBaseTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
